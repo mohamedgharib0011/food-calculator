@@ -13,11 +13,10 @@ phases:
         - echo Build started 
         - ng build
   post_build:
-    commands:
-        - aws s3 sync ./dist/food-calculator s3://food-calculator-prod
-         
+     commands:
+      - echo Build completed on `date`
 artifacts:
-    files:
-        - '/'
-    discard-paths: yes
-    base-directory: 'dist*'
+  files:
+      - '**/*'
+  base-directory: 'dist*'
+  discard-paths: yes
