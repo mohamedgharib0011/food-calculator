@@ -14,4 +14,4 @@ phases:
         - ng build
   post_build:
     commands:
-        - aws s3 sync ./dist/food-calculator s3://food-caculator-bucket
+        - aws s3 sync ./dist/food-calculator s3://food-caculator-prod
