@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark mb-3">
+  <a class="navbar-brand" href="#">Food Calculator</a>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/calorie-couter">Calories Counter</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid bg-3 text-center">  
+  <router-outlet></router-outlet>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p class="text-xs-center">© Copyright 2019. All rights reserved.</p>
+</footer>
