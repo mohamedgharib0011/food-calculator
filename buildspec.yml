@@ -15,3 +15,9 @@ phases:
   post_build:
     commands:
         - aws s3 sync ./dist/food-calculator s3://food-calculator-prod
+         
+artifacts:
+    files:
+        - '/'
+    discard-paths: yes
+    base-directory: 'dist*'
